@@ -1,0 +1,39 @@
+[{
+    "message_id": {
+      "author": "",
+      "permlink": ""
+    },
+    "parent_id": {
+      "author": "",
+      "permlink": ""
+    },
+    "beneficiaries": [
+      {
+        "account": "",
+        "weight": 5000
+      }
+    ],
+    "tokenprop": 5000,
+    "vestpayment": true,
+    "headermssg": "Title?",
+    "bodymssg": "lorem ipsum",
+    "languagemssg": "ru",
+    "tags": [
+      "test",
+      "sample"
+    ],
+    "jsonmetadata": "{\"embeds\":[{\"url\":\"https://www.youtube.com/watch?v=000\"},{\"url\":\"https://ipfs.io/test.gif\"}]}",
+    "curators_prcnt": 5000,
+    "max_payout": null
+  }
+
+,
+  {
+    "voter": "",
+    "message_id": {
+      "author": "",
+      "permlink": ""
+    },
+    "weight": 10000
+}
+]
