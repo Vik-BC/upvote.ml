@@ -10,3 +10,18 @@ fetch("http://116.203.104.164:8888/v1/chain/resolve_names", {
   .then(function(myJson) {
     console.log(JSON.stringify(myJson));
   });
+
+
+
+fetch("http://116.203.104.164:8888/v1/chain/get_abi", {
+  body: '{ "account_name": "gls.publish" }',
+  headers: {
+    "Content-Type": "application/json"
+  },
+  method: "POST"
+}).then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(JSON.stringify(myJson));
+  });
