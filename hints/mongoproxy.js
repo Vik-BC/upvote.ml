@@ -5,7 +5,10 @@ async function nameCW2GLS(cybername) {
         const client = await MO.connect(url, {useNewUrlParser: true, useUnifiedTopology: true})
         const db = await client.db(dbName);
         const col = await db.collection('username');
+        // 'find' instead 'findOne' is BAD IDEA! 
+        // try db.close() & findOne
         const USER = await col.find({owner:cybername,scope:'gls'}).toArray()
+        db.close()
         if(USER[0]&&USER[0].name) return USER[0].name;
         return ' ERROR GETTING YOUR NAME FROM GOLOS';
         
